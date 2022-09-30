@@ -1,0 +1,18 @@
+        <article>
+            <img src="img/logoPic.png" alt="Logotipo Picpay" srcset="">
+
+            <form action="" method="post">
+                <input type="text" name="" id="">
+                <input type="text" name>
+            </form>
+
+        </article>
+        <article>
+
+            <img src="img/hand.jpg" alt="Mäo segurando uma moeda" srcset="">
+
+            <p>
+
+            </p>
+
+        </article>
