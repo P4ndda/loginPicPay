@@ -1,22 +1,13 @@
-:root{
-    --colorGreen: #50D67B; 
-    --colorCream: #F0F1E8;
-    --colorDark: #191D1E;
-    --colorGreey: #253324; 
-    --colorBlue: #416EF2; 
-    --fontDetail: 'Oswald', sans-serif;
-    --fontTitle: 'Inter', sans-serif;
-    }
-
 main{
-    width: 80vw;
-    height: 400px;
+    width: 90vw;
+    height: 450px;
+    max-width: 980px;    
 }
 
 article#artFirst{
     float: left;
-    height: 50%;
-    width: 60%;
+    width: 50%;
+    height: 100%;
 }
 
 .material-symbols-outlined::after{
@@ -48,12 +39,18 @@ input.buttons:hover{
 }  
 
 article#artSecond{
+    position: relative;
+
     float: right;
-    height: 50%;
-    width: 60%;
+    width: 50%;
+    height: 100%;
 }
 
+
 article#artSecond h2{
-    font-size: 1.8em;
-    width: 247px;
+    position: absolute;
+    top: calc(100% - 205px);
+    font-size: 2em;
+    width: 50%;
 }
+

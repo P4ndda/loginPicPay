@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/styleTlab.css" media="screen and (min-width: 768px)">
-    <title>PicPay</title>
+    <link rel="stylesheet" href="estilos/styleTlab.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="estilos/styleDesk.css" media="screen and (min-width: 992px)">
 </head>
 <body>
     <main>
         <article id="artFirst">
             <img id="logo" src="img/logoPic.png" alt="Logotipo Picpay" srcset="">
 
-            <form action="" method="post">
-                <label for="iUser">Usuario: </label>
-                <input type="text" name="" id="iUser" class="field"
-                required size="15"><br>
+            <form action="cadastro.py" method="post">
 
-                <label for="iPass">Senha: </label>
-                <input type="password" id="iPass" class="field"
-                required size="15"><br>
+                <div>
+                    <span class="material-symbols-outlined">person</span>
+                    <label for="iUser">Usuario: </label>          
+                    <input type="text" name="" id="iUser" class="field"
+                    required size="15" placeholder="seu e-mail"><br>
 
-                <input class="buttons" type="submit" value="Enviar">
-                <input class="buttons" type="button" value="Esqueci-senha">
+
+                    <span class="material-symbols-outlined">lock_open</span>
+                    <label for="iPass">senha: </label>
+                    <input type="password" id="iPass" class="field"
+                    required size="15" placeholder="sua password">
+                </div>
+
+
+                <div>
+                    <input class="buttons" type="submit" value="Enviar">
+                    <input class="buttons" type="button" value="Esqueci a senha">
+                </div>
+
             </form>
 
         </article>
@@ -33,7 +44,6 @@
                 Entre para o grupo <span id="picPay">PicPay</span> <br>
                 e aproveite todos os benefícios.
             </h2>
-
         </article>
     </main>
 </body>

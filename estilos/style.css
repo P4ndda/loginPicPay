@@ -13,75 +13,119 @@
 
 }
 
-*{  /*GERAL - margin, padding*/
+*{                                                      
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
-body{   /*BODY - posição, altura e cor de fundo*/
+body, html{                                             
     position: relative;
-    height: 96vh;
+    height: 100vh;
+    width: 100vw;
     background-color: var(--colorCream);
 }
 
-main{   /*MAIN - tamanho, sombra, posiçao, borda*/
+main{                                                   
     width: 300px;
     height: 550px;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px #0000007d;
+    background-color: var(--colorDark);
+    box-shadow: 2px 2px 5px #00000083;
     position: absolute;
 
     top: 50%;
     left: 50%;
 
     transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 
 
 
-article#artFirst{ /*ARTIGO PRINCIPAL - espaçamento, bordar, cor de fundo*/
-    padding: 10px;
+article#artFirst{                                        /*///////ARTIGO 1///////*/     
+    display: block;
+    height: 285px;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
     border-radius: 10px 10px 0px 0px;
     background-color: var(--colorDark);
 }
 
-article#artFirst form{  /*MARGEM - margem*/
-    margin: 50px 60px 50px 0px;
+article#artFirst form{                                  /*/FORMULARIO/*/
+    margin-top: 50px;
 }
 
-article#artFirst 
-input{  /*INPUT - fonte, margem*/
+.material-symbols-outlined{                             /*//SIMBOLOS//*/
+    color: var(--colorCream);
+    font-size: 1.8em;
+}
+
+.material-symbols-outlined::after{
+    font-family: var(--fontDetail);
+    font-size: 0.8em;
+    content: ": ";
+}
+
+article#artFirst                                        /*//INPUTS//*/
+input{                                                               
     margin-bottom: 3px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-article#artFirst 
-label, input.buttons{  /*LABELS BOTÕES - fonte, cor*/
-    font-family: var(--fontDetail);
+label{                                                  /*///LABEL///*/
+    display: none;
+}
+
+article#artFirst                                        /*////BOTÔES E LABEL////*/
+label, input.buttons{                                   
+    font-family: var(--fontDetail);                     
     color: white;
 }
 
-article#artFirst 
-input.buttons{  /*BOTÕES - espaçamento, margem, borda, cor de fundo*/
+article#artFirst                                        /*//INPUTS DE CAMPO//*/
+input.field{
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    color: white;
+}
+
+article#artFirst                                        /*////BOTÔES////*/
+input.buttons{   
+    cursor: pointer;                                       
     background-color: var(--colorBlue);
-    padding: 3px;
+    padding: 6px;
     border-radius: 4px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
-article#artSecond{  /*ARTIGO SECUNDARIO - propriedades de fundo image, borda, cor de fundo*/
+article#artFirst                                        
+input.buttons:hover{
+    font-size: 1em;
+    transition: 0.6s;
+}  
+
+article#artSecond{                                      /*///////ARTIGO 2///////*/
+    position: relative;                                    
+    display: block;
+    height: 265px;
+    width: 300px;
+    background-image: url(../img/pexels-anthony-157520.png);
     background-repeat: no-repeat;
-    background-position: top 25px right 15px;
-    border-radius: 0px 0px 10px 10px;
-    background-color: var(--colorGreen);
-    background-image: url(../img/hand.png);
+    background-position: left bottom;
+    border-radius: 15px 15px 10px 10px;
+    padding: 10px 0px 0px 10px;
 }
 
-article#artSecond h2{ /*TITULO - espaçamento, largura, fonte, cor*/
-    padding: 110px 20px 25px 15px;
-    width: 217px;
-    font-size: 1.6em;
+article#artSecond h2{                                   /*TITULO*/
+    position: absolute;
+    top: calc(100% - 145px );                                 
+    display: block;
+
+    width: 247px;
+    font-size: 1.8em;
     font-family: var(--fontTitle);
     color: var(--colorCream);
 }
